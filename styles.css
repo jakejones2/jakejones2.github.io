@@ -45,13 +45,15 @@ img {
 
 }
 
-h2 {
-    margin-top: 5%;
+h2,
+p {
     margin-bottom: 3%;
 }
 
-p {
-    margin-bottom: 3%;
+h2,
+footer,
+#to-you {
+    margin-top: 5%;
 }
 
 ul,
@@ -63,49 +65,37 @@ ol {
 #stats-grid {
     display: grid;
     margin: auto;
-    column-gap: 5%;
-    row-gap: 5%;
+    column-gap: 20px;
+    row-gap: 20px;
     width: 90%;
+}
+
+.stat-grid-item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.8em;
 }
 
 .stat-grid-item1 {
     grid-column-start: 1;
     grid-row-start: 1;
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 0.8em;
+
 }
 
 .stat-grid-item2 {
     grid-column-start: 1;
     grid-row-start: 2;
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 0.8em;
 }
 
 .stat-grid-item3 {
     grid-column-start: 2;
     grid-row-start: 1;
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 0.8em;
 }
 
 .stat-grid-item4 {
     grid-column-start: 2;
     grid-row-start: 2;
-    background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 0.8em;
-}
-
-footer {
-    margin-top: 5%;
 }
 
 .links {
@@ -115,9 +105,10 @@ footer {
     font-size: 0.8em;
 }
 
-#to-you {
-    margin-top: 5%;
+a:hover {
+    font-weight: 600
 }
+
 
 @media (min-width: 768px) {
     body {
@@ -134,10 +125,7 @@ footer {
         font-size: 3em;
     }
 
-    h2 {
-        text-align: center;
-    }
-
+    h2,
     p {
         text-align: center;
     }
