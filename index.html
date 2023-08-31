@@ -1,75 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Meet the Chuckle Brothers</title>
-</head>
-
-<body>
-    <header id="to-me">
-        <h1>The Chuckle Brothers</h1>
-        <a class="to-me-you" href="#to-you">to me</a>
-    </header>
-    <main>
-        <h2 id="barry">Barry Chuckle</h2>
-        <p>The small one. Kinda cheeky. Thinner moustache, slighty shorter hair. Was older than Paul, RIP.</p>
-        <img src="https://i2-prod.mirror.co.uk/incoming/article13034883.ece/ALTERNATES/s615b/0_MGP_CHP_050818CHUCKLE_2275ShepherdJPG.jpg"
-            alt="Picture of Barry, sunbathing, looking happy and content.">
-        <h2 id="paul">Paul Chuckle</h2>
-        <p>The taller one. Thicker moustache, slightly longer hair. Now works as a DJ.</p>
-        <img src="https://pbs.twimg.com/media/By23CV4IYAAfqaS.jpg"
-            alt="Selfie of Paul's face, looking a bit dazed, in bed with no top. SFW though. ">
-        <h2>General info:</h2>
-        <section id="stats-grid">
-            <article class="stat-grid-item stat-grid-item1">
-                <h3>Height List:</h3>
-                <ol>
-                    <li>Paul</li>
-                    <li>Barry</li>
-                </ol>
-            </article>
-            <article class="stat-grid-item stat-grid-item2">
-                <h3>Famous for:</h3>
-                <ul>
-                    <li>Goofing around</li>
-                    <li>To me</li>
-                    <li>To you</li>
-                </ul>
-            </article>
-            <article class="stat-grid-item stat-grid-item3">
-                <h3>Skills:</h3>
-                <ol>
-                    <li>Acting</li>
-                    <li>Humour</li>
-                    <li>Reliability</li>
-                    <li>Endurance</li>
-                </ol>
-            </article>
-            <article class="stat-grid-item stat-grid-item4">
-                <h3>Shows:</h3>
-                <ul>
-                    <li>ChuckleVision</li>
-                    <li>TBC</li>
-                </ul>
-            </article>
-        </section>
-        <br />
-        <a id="to-you" class="to-me-you" href="#to-me">to you</a>
-    </main>
-    <footer>
-        <a class="links" href="https://www.thesun.co.uk/wp-content/uploads/2018/08/NINTCHDBPICT000424853495.jpg">Have a
-            proper look at
-            Barry
-            please</a>
-        <a class="links"
-            href="https://images.ctfassets.net/p21os7418u5r/ygHUvO2w2BML5iWRcETZT/778a811c71f82c3c3b1f4a88646c0f80/Paul_Chuckle_British_TV_Legend.jpeg?w=528&h=450&q=100&fit=fill">Take
-            a proper look at Paul please</a>
-        <a class="links" href="https://en.wikipedia.org/wiki/Chuckle_Brothers" target="_blank">See our story (in a new
-            tab)</a>
-    </footer>
-</body>
-
-</html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+        <script src="./index.js" defer></script>
+        <title>Jake Jones Developer</title>
+    </head>
+    <body id="top">
+        <header>
+            <h1>Jake Jones</h1>
+            <div class="nav">
+                <a href='#top' class="nav-button">Home</a>
+                <a href='#contact' class="nav-button">Contact</a>
+                <a href='#projects' class="nav-button">Projects</a>
+                <a href='#about-me' class="nav-button">About</a>
+                <a href="https://github.com/jakejones2"><img id='github-link' class="small-logo" src="./media/logos/github.png"></a>
+                <a href="https://www.linkedin.com/in/jake-jones-318330102/"><img id='github-link' class="small-logo" src="./media/logos/linkedin.png"></a>
+            </div>
+        </header>
+        <main>
+            <div class="star" id="star1"></div>
+            <div class="star" id="star2"></div>
+            <div class="star" id="star3"></div>
+            <div class="star" id="star4"></div>
+            <div class="star" id="star5"></div>
+            <div class="star" id="star6"></div>
+            <div class="star" id="star7"></div>
+            <div class="star" id="star8"></div>
+            <div class="star" id="star9"></div>
+            <div class="star" id="star10"></div>
+            <div id="home">
+                <section id="mini-bio">
+                    <h2 id="welcome">Hello!</h2>
+                    <img id="profile-pic" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+                    <p id="intro">I'm a recent graduate of the <a href="https://northcoders.com/">Northcoders</a> bootcamp working with Python and Javascript.<br><br>Take a look at some of the things I've been working on and be sure to check out the code on my <a href="https://github.com/jakejones2">GitHub</a>. I'm always looking to improve, so please get in touch with your suggestions!</p></section>
+                <div id="previous"></div>
+                <section id="portfolio">
+                    <article id='mates-rate-proj-mini' class="project-mini">
+                        <img class="project-img-mini" src="./media/matesrate.png">
+                        <div class="project-mini-info">
+                            <h3 class="project-title-mini"><i>Mates Rate</i><span class="date">&nbsp; (Apr 23-)</span></h3>
+                            <p class="project-mini-description">Online multplayer game where you rate your friends and famous people in funny categories. <span class="extra">Built with <a href="https://channels.readthedocs.io/en/latest/">Django Channels</a> and deployed on AWS.<br><br></span>
+                                See more <a href="#mates-rate-proj">here.</a></p> 
+                        </div>
+                    </article>
+                    <article id='articles-api-proj-mini' class="project-mini">
+                        <img class="project-img-mini" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80">
+                        <div class="project-mini-info">
+                            <h3 class="project-title-mini">Articles API <span class="date">&nbsp; (Aug 23)</span></h3>
+                            <p class="project-mini-description">RESTful API for a news/social website built with Express.js. <span class="extra">Features CRUD functionality and JWT authentication.<br><br></span>See more <a href="#articles-api-proj">here.</a></p>
+                        </div>
+                    </article>
+                    <article id='animals-proj-mini' class="project-mini">
+                        <img class="project-img-mini" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80">
+                        <div class="project-mini-info">
+                            <h3 class="project-title-mini"><i>Do You Know Your Animals?</i><span class="date">&nbsp; (Aug 23)</span></h3>
+                            <p class="project-mini-description">Afternoon project getting used to audio in JS. <span class="extra">Try get to level 7 or higher!<br><br></span>See more <a href="#animals-proj">here.</a></p>
+                        </div>
+                    </article>
+                    <article id='baby-names-proj-mini' class="project-mini">
+                        <img class="project-img-mini" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80">
+                        <div class="project-mini-info">
+                            <h3 class="project-title-mini">Historical UK Baby Names <span class="date">&nbsp; (Jul 23-)</span></h3></h3>
+                            <p class="project-mini-description">First React app! Small test project - generates historical UK baby names.<span class='extra'><br><br></span>See more <a href="#baby-names-proj">here.</a></p>
+                        </div>
+                    </article>
+                    <article id='problem-solving-proj-mini' class="project-mini">
+                        <img class="project-img-mini" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80">
+                        <div class="project-mini-info">
+                            <h3 class="project-title-mini">Misc Problem Solving <span class="date">&nbsp; (Jul 23-)</span></h3></h3>
+                            <p class="project-mini-description">Collection of miscellaneous problems I've enjoyed finding solutions for. <span class='extra'><br><br></span>See more <a href="#problem-solving-proj">here.</a></p>
+                        </div>
+                    </article>
+                    <article id='sc-scraper-proj-mini' class="project-mini">
+                        <img class="project-img-mini" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80">
+                        <div class="project-mini-info">
+                            <h3 class="project-title-mini">SoundCloud Comment Scraper GUI<span class="date">&nbsp; (Dec 23 - March 23)</span></h3></h3>
+                            <p class="project-mini-description">Python Tkinter GUI for scraping SoundCloud comments. <span class='extra'></span><br><br>See more <a href="#sc-scraper-proj">here.</a></p>
+                        </div>
+                    </article>
+                </section>
+                <div id="next"></div>
+            </div>
+            <div id="game-text"><span id="stars-caught">0</span> of 10 stars caught <span id="winner">🏆</span>
+                <span id="game-hint"><br>Regret not going for the outer ones first?</span>
+            </div>
+            <label class="switch">
+                <input id="stars-off" type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <div id="links-banner">
+                <img class="banner-logo" src="./media/logos/js.png">
+                <img class="banner-logo" src="./media/logos/express.png">
+                <img class="banner-logo" src="./media/logos/react.png">
+                <img class="banner-logo" src="./media/logos/channels.png">
+                <img class="banner-logo" src="./media/logos/python.png">
+                <img class="banner-logo" src="./media/logos/postgres.png">
+            </div>
+            <section id="projects">
+                <article id="mates-rate-proj" class="project">
+                    <img class="project-img" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80">
+                    <div class="project-info">
+                        <h2 class="project-title"><i>Mates Rates Web Game</i></h2>
+                        <p class="project-para">blha blah laowduhao owaidj naowid mioajdso jowd jiw jiwoaw  jwia oaid</p>
+                        <p class="project-para">blha blah laowduhao owaidj naowid mioajdso jowd jiw jiwoaw  jwia oaid</p>
+                        <p class="project-para">https://github.com/jakejones2/mates-rate</p>
+                    </div>
+                </article>
+                <div class="divider"></div>
+                <article id="articles-api-proj" class="project">
+                    <div class="project-info">
+                        <h2 class="project-title"><i>Articles API</i></h2>
+                        <p class="project-para">blha blah laowduhao owaidj naowid mioajdso jowd jiw jiwoaw  jwia oaid</p>
+                        <p class="project-para">blha blah laowduhao owaidj naowid mioajdso jowd jiw jiwoaw  jwia oaid</p>
+                        <p class="project-para">https://github.com/jakejones2/articles-api</p>
+                    </div>
+                    <img class="project-img" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80">
+                </article>
+                <div class="divider"></div>
+                <article id='problem-solving-proj' class="project">
+                    <img class="project-img" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80">
+                    <div class="project-info">
+                        <h2 class="project-title"><i>Misc Problem Solving</i></h2>
+                        <p class="project-para">https://github.com/jakejones2/problem-solving</p>
+                        <p class="project-para">blha blah laowduhao owaidj naowid mioajdso jowd jiw jiwoaw  jwia oaid</p>
+                        <p class="project-para">blha blah laowduhao owaidj naowid mioajdso jowd jiw jiwoaw  jwia oaid</p>
+                    </div>
+                </article>
+                <article id='baby-names-proj' class="project">
+                    <div class="project-info">
+                        <h2 class="project-title"><i>Historical UK Baby Names</i></h2>
+                        <p class="project-para">Takes a while to load sometimes - I think Render slows it down etc. Wait for it to load etc.</p>
+                        <p class="project-para">https://name-generator-i5r3.onrender.com/</p>
+                        <p class="project-para">First React project etc.</p>
+                    </div>
+                    <img class="project-img" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80">
+                </article>
+                <article id='animals-proj' class="project">
+                    <img class="project-img" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80">
+                    <div class="project-info">
+                        <h2 class="project-title"><i>Do You Know Your Animals?</i></h2>
+                        <p class="project-para">Takes a while to load sometimes - I think Render slows it down etc. Wait for it to load etc.</p>
+                        <p class="project-para">https://animal-game.onrender.com/</p>
+                        <p class="project-para">blha blah laowduhao owaidj naowid mioajdso jowd jiw jiwoaw  jwia oaid</p>
+                    </div>
+                </article>
+                <article id='sc-scraper-proj' class="project">
+                    <img class="project-img" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8fDA%3D&w=1000&q=80">
+                    <div class="project-info">
+                        <h2 class="project-title"><i>SoundCloud scraper</i></h2>
+                        <p class="project-para">This python package scrapes SoundCloud comments with a selection of built in and customisable filters. Data is exported to CSV, and can be scraped from individual track URLs, or parent URLs such as playlists or artist pages.</p>
+                        <p class="project-para">This project was intended initially for use in music scholarship, so I designed a Tkinter GUI as the main interface. However, the modules could be imported and used independently as in the example at the bottom of <code>/src/app/backend/scraper.py</code>.</p>
+                        <p class="project-para">This was my first ever coding project - excuse some poor design choices here and there! At some point I might revisit the code and refactor it for a simple web app. It might be a good project to practice some data analysis or ML - analysing themes or detecting spam in an artist's audience for example.</p>
+                        <p class="project-para">I'm aware I could have used SoundCloud's API for much better performance and reliability - I wanted to practice data scraping at this stage! Scraping also bypasses any API restrictions that might be in place.</p>
+                    </div>
+                </article>
+            </section>
+            <section id="about-me">
+                <div class="space"></div>
+                <div id="blob1">
+                    <h2 class="section-title" id="about-me-title">About Me</h2>
+                    <img id="about-me-pic" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
+                    <article class="about-me-content">
+                        <p class="about-me-para">wad awoid ad awoidaoij a oiadw oawdoi oijd anvkv rbjkfa</p>
+                        <p class="about-me-para">wad awoid ad awoidaoij a oiadw oawdoi oijd anvkv rbjkfa</p>
+                        <p class="about-me-para">wad awoid ad awoidaoij a oiadw oawdoi oijd anvkv rbjkfa</p>
+                    </article>
+                </div>
+            </section>
+            <div id="about-me-banner">
+                <div class="banner-item" id="music">
+                    <p class="about-banner-text">Listen here &nbsp;→&nbsp;</p>
+                    <a href="https://soundcloud.com/jake-jones-137"><img class="link-logo" id="soundcloud" src="./media/logos/soundcloud.png"></a>            
+                </div>
+                <div class="banner-item" id="cv">
+                    <p class="about-banner-text">CV &nbsp;→&nbsp;</p>
+                    <img id="cv-img" class='link-logo' src="./media/logos/cv.png">
+                </div>
+            </div>
+            <section id="contact">
+                <div class="space"></div>
+                <div id="blob2">
+                    <h2 class="section-title">Contact</h2>
+                    <ul id="contact-list">
+                        <li ><img class="contact-img" id="phone-logo" src="./media/logos/phone.png"><span class="contact">07887396271</span></li>
+                        <li ><img class="contact-img" src="./media/logos/email.png"><span class="contact">jakejones1998@hotmail.co.uk</span></li>
+                        <li ><img class="contact-img" src="./media/logos/github-black.png"><span class="contact">https://github.com/jakejones2</span></li>
+                        <li ><img class="contact-img" src="./media/logos/linkedin-black.png"><span class="contact">https://www.linkedin.com/in/jake-jones-318330102/</span></li>
+                    </ul>       
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="nav-bottom">
+                <h2 class="footer-header">Jake Jones</h2>
+                <p class="vertical-bar">|</p>
+                <a href='#top' class="nav-button footer-button">Home</a>
+                <a href="https://github.com/jakejones2"><img class="small-logo footer-logo" src="./media/logos/github.png"></a>
+                <a href="https://www.linkedin.com/in/jake-jones-318330102/"><img class="small-logo footer-logo" src="./media/logos/linkedin.png"></a>
+            </div>
+        </footer>
+    </body>
+    </html>
