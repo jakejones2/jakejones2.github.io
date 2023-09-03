@@ -94,11 +94,6 @@ $(".star").each((i, el) => {
 
 // deactivate stars
 
-// make this fade out the stars and gametext
-// make it look less stark
-// add a star turning to a black hole as pics on each bit???
-// check mobile view
-
 $("#stars-off").change(() => {
   if ($("#stars-off").is(":checked")) {
     clearInterval(meanderingStars);
