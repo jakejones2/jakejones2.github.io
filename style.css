@@ -608,6 +608,7 @@ a:hover {
     font-size: calc(2em + 3vw);
     padding-top: 2%;
     padding-bottom: 2%;
+    color:rgb(37, 37, 37);
 }
 
 #projects {
@@ -623,6 +624,10 @@ a:hover {
     flex-direction: flex-start;
     justify-content: stretch;
     align-items: center;
+}
+
+#projects-title {
+    padding-bottom: 0;
 }
 
 #project-title {
@@ -747,13 +752,15 @@ a:hover {
 
 .flex {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
 }
 
 iframe {
     margin-right: 5%;
+    width: 600px;
+    height: 115px;
 }
 
 .link-logo {
@@ -825,16 +832,19 @@ iframe {
 
 @media (max-width: 1500px) {
     #blob1 {
-        width: 50vw;
+        width: 54vw;
         left: 40vw;
         height: fit-content;
         padding: 5vw;
-        left: 32%;
-        top: 10%;
+        left: 30%;
+        top: 7%;
+        margin-right: 2%;
     }
+
+
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     #about-me-pic {
         height: 50vh;
     }
@@ -842,22 +852,34 @@ iframe {
     #blob1 {
         padding-left: 10vw;
         padding-right: 10vw;
-        left: 30vw;
+        left: 25vw;
         font-size: 0.8em;
     }
 
     iframe {
-        width: 200px;
+        width: 50vh;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 850px) {
+    .about-me-divider {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .about-me-content {
+        font-size: 0.8em;
+    }
+
+    #blob1 {
+        height: fit-content;
     }
 }
 
 @media (orientation: portrait) {
     #about-me {
         padding-top: 2vh;
-    }
-
-    #about-me-pic {
-        display: none;
     }
 
     #blob1 {
@@ -867,11 +889,6 @@ iframe {
         padding-bottom: 6vh;
         position: static;
         display: block;
-    }
-
-    #about-me-boxes {
-        position: relative;
-        margin-top: 2vh;
     }
 
     .about-me-divider {
@@ -901,13 +918,37 @@ iframe {
         width: 80%;
         font-size: rem;
     }
+
+    #about-me-pic {
+        display: none;
+    }
+
+    #about-me-boxes {
+        position: static;
+        margin-top: 2vh;
+    }
 }
 
-@media (max-width: 300px) {
+@media (orientation: portrait) and (max-width: 300px) {
     #about-me {
         font-size: 0.8rem;
     }
 }
+
+/* @media (orientation: portrait) and (min-height: 400px) {
+    #about-me-pic {
+        display: block;
+        height: 35vh;
+        width: fit-content;
+        margin: 10%;
+    }
+
+    #about-me-boxes {
+        position: absolute;
+        top: 35%;
+    }
+} */
+
 
 /* contact */
 
