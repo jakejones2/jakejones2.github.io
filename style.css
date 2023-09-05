@@ -750,6 +750,25 @@ a:hover {
 }
 
 @media (orientation: portrait) {
+
+    .divider {
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+
+    .project-para,
+    .headline {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .info {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .project-img, .projext-info {
         width: 90vw;
         font-size: 1em;
