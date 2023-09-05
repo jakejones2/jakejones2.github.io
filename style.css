@@ -514,6 +514,7 @@ a:hover {
     #home {
         flex-flow: row wrap;
         align-items: center;
+        justify-content: flex-start;
         gap: 0px;
         font-size: 1em;
         height: calc(100vh - 90px);
@@ -541,7 +542,7 @@ a:hover {
 
     #portfolio {
         width: 80%;
-        margin-bottom: 10vh;
+        margin-bottom: 15vh;
     }
 
     .project-img-mini {
@@ -592,6 +593,10 @@ a:hover {
 @media (max-height: 700px) {
     #mini-bio {
         padding-bottom: 3%;
+    }
+
+    #portfolio {
+        margin-bottom: 10vh;
     }
 }
 
