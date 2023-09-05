@@ -450,60 +450,62 @@ a:hover {
         margin-right: 5%;
     }
 
-    @media (max-width: 800px) {
-        #home {
-            font-size: 0.7em;
-        }
+}
 
-        #game-text {
-            font-size: 0.8em;
-        }
+@media (max-width: 800px) {
+    #home {
+        font-size: 0.7em;
+    }
 
-        #portfolio,
-        #bio {
-            max-height: calc(100vh - 95px)
-        }
+    #game-text {
+        font-size: 0.8em;
+    }
 
-        #welcome {
-            font-size: 2em;
-            margin-bottom: 3%;
-        }
+    #portfolio,
+    #bio {
+        max-height: calc(100vh - 95px)
+    }
 
-        #intro {
-            margin-top: 3%;
-        }
+    #welcome {
+        font-size: 2em;
+        margin-bottom: 3%;
+    }
 
-        #previous,
-        #next {
-            border-top: 8px solid transparent;
-            border-right: 12px solid var(--pink);
-            border-bottom: 8px solid transparent;
-            margin: 0px;
-        }
+    #intro {
+        margin-top: 3%;
+    }
 
-        #previous {
-            margin-left: 5%;
-        }
+    #previous,
+    #next {
+        border-top: 8px solid transparent;
+        border-right: 12px solid var(--pink);
+        border-bottom: 8px solid transparent;
+        margin: 0px;
+    }
 
-        #next {
-            border-right: 0px;
-            border-left: 12px solid var(--pink);
-            margin-right: 5%;
-        }
+    #previous {
+        margin-left: 5%;
+    }
 
-        @media(max-width: 400px) {
-            #home {
-                font-size: 0.6em;
-            }
-            .project-title-mini {
-                margin-bottom: 2%;
-            }
-            .project-mini-description {
-                margin-top: 0;
-                margin-bottom: 10%;
-            }
-        }
+    #next {
+        border-right: 0px;
+        border-left: 12px solid var(--pink);
+        margin-right: 5%;
+    }
 
+    
+}
+
+@media(max-width: 400px) {
+    #home {
+        font-size: 0.6em;
+    }
+    .project-title-mini {
+        margin-bottom: 2%;
+    }
+    .project-mini-description {
+        margin-top: 0;
+        margin-bottom: 10%;
     }
 }
 
@@ -514,6 +516,7 @@ a:hover {
         align-items: center;
         gap: 0px;
         font-size: 1em;
+        height: calc(100vh - 90px);
     }
 
     #mini-bio, #portfolio {
@@ -537,6 +540,7 @@ a:hover {
 
     #portfolio {
         width: 80%;
+        margin-bottom: 10vh;
     }
 
     .project-img-mini {
@@ -571,6 +575,16 @@ a:hover {
         margin-top: 0px;
         text-align: left;
         height: 15px;
+    }
+}
+
+@media (max-width: 330px) {
+    .extra-intro {
+        display: none;
+    }
+
+    #profile-pic {
+        width: 80px;
     }
 }
 
@@ -632,7 +646,7 @@ a:hover {
 }
 
 .project-space {
-    height: 5vh;
+    height: 4vh;
 }
 
 #blob3 {
@@ -703,6 +717,7 @@ a:hover {
     font-weight: 300;
     margin-left: 20px;
     margin-right: 20px;
+    min-width: 0;
 }
 
 .project-tech,
@@ -747,6 +762,26 @@ a:hover {
     .project-info {
         width: 100%;
         font-size: 1rem;
+        margin: 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .question-logo {
+        width: 25px;
+        padding: 2px;
+    }
+
+    .cogs-logo {
+        width: 30px;
+    }
+
+    .project-para {
+        margin: 10px;
+    }
+
+    code {
+        font-size: 0.8em;
     }
 }
 
@@ -859,7 +894,6 @@ iframe {
         padding: 5vw;
         left: 30%;
         top: 7%;
-        margin-right: 2%;
     }
 
 
@@ -875,6 +909,7 @@ iframe {
         padding-right: 10vw;
         left: 25vw;
         font-size: 0.8em;
+        margin-right: 0;
     }
 
     iframe {
@@ -899,7 +934,12 @@ iframe {
 }
 
 @media (orientation: portrait) {
+
     #about-me {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        max-height: 98vh;
         padding-top: 2vh;
     }
 
@@ -941,12 +981,23 @@ iframe {
     }
 
     #about-me-pic {
-        display: none;
+        display: block;
+        min-width: 0;
+        min-height: 0;
+        width: auto;
+        height: calc(100% - 130px);
+        margin: 0;
+        margin-left: 20px;
     }
 
     #about-me-boxes {
-        position: static;
         margin-top: 2vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        min-width: 0;
+        min-height: 0;
+        overflow-y: hidden;
     }
 }
 
@@ -955,21 +1006,6 @@ iframe {
         font-size: 0.8rem;
     }
 }
-
-/* @media (orientation: portrait) and (min-height: 400px) {
-    #about-me-pic {
-        display: block;
-        height: 35vh;
-        width: fit-content;
-        margin: 10%;
-    }
-
-    #about-me-boxes {
-        position: absolute;
-        top: 35%;
-    }
-} */
-
 
 /* contact */
 
