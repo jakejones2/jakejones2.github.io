@@ -756,12 +756,16 @@ a:hover {
         margin-bottom: 7%;
     }
 
-    .project-para,
+    .project-para {
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
     .headline {
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 0;
-        margin-right: 0;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .info {
@@ -1008,7 +1012,7 @@ iframe {
 
     .about-me-para {
         width: 80%;
-        font-size: rem;
+        font-size: calc(0.35rem + 1vh);
     }
 
     #about-me-pic {
@@ -1029,12 +1033,6 @@ iframe {
         min-width: 0;
         min-height: 0;
         overflow-y: hidden;
-    }
-}
-
-@media (orientation: portrait) and (max-width: 300px) {
-    #about-me {
-        font-size: 0.8rem;
     }
 }
 
