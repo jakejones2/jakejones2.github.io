@@ -526,6 +526,7 @@ a:hover {
     
     #mini-bio {
         width: 96%;
+        padding-bottom: 0;
     }
 
     #intro {
@@ -585,6 +586,12 @@ a:hover {
 
     #profile-pic {
         width: 80px;
+    }
+}
+
+@media (max-height: 700px) {
+    #mini-bio {
+        padding-bottom: 3%;
     }
 }
 
