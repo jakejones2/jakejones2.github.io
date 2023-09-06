@@ -558,7 +558,7 @@ a:hover {
         border-top: 8px solid transparent;
         border-right: 12px solid var(--pink);
         border-bottom: 8px solid transparent;
-        margin: 0px;
+        margin: 5px;
     }
 
     #previous {
@@ -587,6 +587,14 @@ a:hover {
 
     #profile-pic {
         width: 80px;
+    }
+
+    #next {
+        margin-left: 0;
+    }
+
+    #previous {
+        margin-right: 0;
     }
 }
 
@@ -757,15 +765,9 @@ a:hover {
     }
 
     .project-para {
-        padding-left: 2px;
-        padding-right: 2px;
-        margin-left: 2px;
-        margin-right: 2px;
-    }
-
-    .headline {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding: 0;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
 
     .info {
@@ -773,7 +775,15 @@ a:hover {
         padding-right: 10px;
     }
 
-    .project-img, .projext-info {
+    .question-logo,
+    .cogs-logo,
+    .project-title,
+    .project-subtitle {
+        margin-left: 2.5%;
+    }
+
+    .project-img, 
+    .projext-info {
         width: 90vw;
         font-size: 1em;
     }
@@ -798,6 +808,13 @@ a:hover {
         width: 100%;
         font-size: 1rem;
         margin: 0;
+    }
+
+    .headline {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
     }
 }
 
