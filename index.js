@@ -3,7 +3,7 @@
 $("#next").click(() => {
   $("#portfolio").css("scroll-snap-type", "none");
   let scrollDistance = $("#portfolio").scrollLeft();
-  if (scrollDistance >= $("#portfolio").width() * 4.5) {
+  if (scrollDistance >= $("#portfolio").width() * 5.5) {
     $("#portfolio").animate({ scrollLeft: 0 }, 500);
   } else {
     scrollDistance += $("#portfolio").width();
@@ -18,8 +18,7 @@ $("#previous").click(() => {
   let scrollDistance = $("#portfolio").scrollLeft();
   $("#portfolio").css("scroll-snap-type", "none");
   if (scrollDistance < 10) {
-    console.log("hi");
-    scrollDistance = $("#portfolio").width() * 5;
+    scrollDistance = $("#portfolio").width() * 6;
     $("#portfolio").animate({ scrollLeft: scrollDistance }, 500);
   } else {
     scrollDistance -= $("#portfolio").width();
