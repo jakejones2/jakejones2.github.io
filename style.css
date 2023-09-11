@@ -342,6 +342,8 @@ a:hover {
     font-size: calc(1em + 5vw);
     margin-bottom: 30px;
     color: rgb(251, 254, 166);
+    margin-top: 20px;
+    text-align: center;
 }
 
 #profile-pic {
@@ -414,11 +416,6 @@ a:hover {
 
 .project-mini-description{
     margin-bottom: 20%;
-}
-
-#welcome {
-    margin-top: 20px;
-    text-align: center;
 }
 
 @media (max-width: 1000px) {
@@ -538,6 +535,7 @@ a:hover {
         font-size: calc(1em + 5vw);
         margin-bottom: 5%;
         margin-top: 0;
+        color: white;
     }
 
     #portfolio {
@@ -912,7 +910,6 @@ iframe {
     left: 35%;
     top: 12%;
     background-color: #da8550ee;
-    color: rgb(26, 25, 25);
     border-radius: 60% 60% 60% 50% / 40% 70% 30% 70%; 
 }
 
@@ -932,6 +929,7 @@ iframe {
 }
 
 .about-me-para {
+    color:rgb(37, 37, 37);
     margin: auto;
     margin-bottom: 2%;
     width: calc(300px + 40%);
@@ -1002,6 +1000,8 @@ iframe {
         padding-bottom: 6vh;
         position: static;
         display: block;
+        margin-top: 10%;
+        margin-bottom: 5%;
     }
 
     .about-me-divider {
@@ -1034,19 +1034,21 @@ iframe {
 
     #about-me-pic {
         display: block;
+        display: none;
         min-width: 0;
         min-height: 0;
         width: auto;
         height: calc(100% - 130px);
-        margin: 0;
-        margin-left: 20px;
+        margin: 20px;
+        margin-top: 0;
+        z-index: 50;
     }
 
     #about-me-boxes {
         margin-top: 2vh;
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-start;
+        justify-content: space-evenly;
         min-width: 0;
         min-height: 0;
         overflow-y: hidden;
@@ -1120,7 +1122,7 @@ li {
 
 @media (max-width: 500px) {
     .space {
-        height: 5%;
+        height: 10%;
     }
 
     #blob2 {
