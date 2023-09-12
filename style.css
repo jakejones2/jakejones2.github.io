@@ -633,6 +633,30 @@ a:hover {
     }
 }
 
+@media(max-width: 600px) {
+    .del {
+        display: none;
+    }
+}
+
+@media(max-width: 465px) {
+    .del2 {
+        display: none;
+    }
+}
+
+@media(max-width: 395px) {
+    .del3 {
+        display: none;
+    }
+}
+
+@media(max-width: 326px) {
+    .banner-logo {
+        height: 20px;
+    }
+}
+
 /* projects */
 
 .section-title {
