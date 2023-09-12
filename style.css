@@ -694,8 +694,8 @@ a:hover {
 #blob3 {
     margin: auto;
     margin-bottom: 2vh;
-    padding: 5%;
-    padding-bottom: 6%;
+    padding: 2.5%;
+    padding-bottom: 3%;
     width: fit-content;
     height: fit-content;
     background-color: #509ada6e;
@@ -780,6 +780,12 @@ a:hover {
 }
 
 @media (orientation: portrait) {
+
+    #blob3 {
+        padding: 5%;
+        padding-bottom: 6%;
+    }
+    
 
     .divider {
         margin-top: 7%;
