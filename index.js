@@ -3,7 +3,7 @@
 $("#next").click(() => {
   $("#portfolio").css("scroll-snap-type", "none");
   let scrollDistance = $("#portfolio").scrollLeft();
-  if (scrollDistance >= $("#portfolio").width() * 5.5) {
+  if (scrollDistance >= $("#portfolio").width() * 6.5) {
     $("#portfolio").animate({ scrollLeft: 0 }, 500);
   } else {
     scrollDistance += $("#portfolio").width();
