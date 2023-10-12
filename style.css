@@ -61,10 +61,11 @@ header {
     height: 90px;
     margin: 0px;
     padding: 0px;
-    background-color: var(--faint-black);
+    background-color: black;
     position: relative;
     row-gap: 0px;
     color: var(--pink);
+    z-index: 2;
 }
 
 .nav,
@@ -176,7 +177,7 @@ header {
 }
 
 #star1 {
-    top: 12vh;
+    top: 15vh;
     left: 80vw;
 }
 
@@ -186,12 +187,12 @@ header {
 }
 
 #star3 {
-    top: 10vh;
+    top: 22vh;
     left: 30vw;
 }
 
 #star4 {
-    top: 15vh;
+    top: 18vh;
     left: 35vw;
 }
 
