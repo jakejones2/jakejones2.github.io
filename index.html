@@ -114,173 +114,165 @@
                 <img class="banner-logo del" src="./media/logos/postgres.png">
             </div>
             <section id="projects">
-                <div class="project-space"></div>
-                <div id="blob3">
+                <div class="section-container" id="projects-container">
                     <h2 class="section-title" id="projects-title">Projects</h2>
+                    <article id="swim-wild-proj" class="project">
+                        <img class="project-img" src="./media/swim-wild.png">
+                        <div class="project-info" id="swil-wild-proj-info">
+                            <h2 class="project-title"><i>Swim Wild</i></h2>
+                            <h3 class="project-subtitle">Javascript <b>&nbsp;·&nbsp;</b> React Native <b>&nbsp;·&nbsp;</b> Express.js <b>&nbsp;·&nbsp;</b> MongoDB &nbsp;&nbsp;|&nbsp;&nbsp; Sep 23</h3>
+                            <p class="project-para headline">Swim Wild is a mobile app for the emerging trend of wild swimming, planned and built in under two weeks as the culmination of the Northcoders Bootcamp. See a demo <a class='project-anchor' href="https://youtu.be/Ijmxn4ugKPQ">here!</a></p>
+                            <div class="project-description">
+                                <img src="./media/logos/question.png" class="question-logo">
+                                <p class="project-para info">Swim Wild provides a blend of user generated and <b>web-scraped</b> content to inform users about nearby swimmings spots, their features, and safety considerations. Users can create new locations, track and see data about their swim history, upload pictures and reviews, see nearby locations on a map, and receive realtime updates on hydrology and weather information from our network of APIs.</p>
+                            </div>
+                            <div class="project-tech">
+                                <img class="cogs-logo" src="./media/logos/cogs.png">
+                                <p class="project-para info">Backend uses node/express.js and <b>MongoDB/mongoose.</b> Authentication and image storage handled with Firebase. ML polynomial regression algorithms analyse timeseries data to predict water temperatures based on date and location. Front end uses <b>React Native</b> with Expo Go, leveraging device location, gallery and camera.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="divider"></div>
+                    <article id="mates-rate-proj" class="project">
+                        <div class="project-info" id="mates-rate-proj-info">
+                            <h2 class="project-title"><i>Mates Rate</i> Web Game</h2>
+                            <h3 class="project-subtitle">Python <b>&nbsp;·&nbsp;</b> Django Channels <b>&nbsp;·&nbsp;</b> AWS &nbsp;&nbsp;|&nbsp;&nbsp; Apr 23 - Present</h3>
+                            <p class="project-para headline">My most recent and developed Python project - an online multiplayer game built with <a class='project-anchor' href="https://channels.readthedocs.io/en/latest/">Django Channels</a>. Click <a class='project-anchor' href="https://matesrate.net">here</a> to play now!</p>
+                            <div class="project-description">
+                                <img src="./media/logos/question.png" class="question-logo">
+                                <p class="project-para info">Join or host a game with friends, and then take turns submitting <b>characters</b> or a <b>category</b>. Players vote on each character's performance in the chosen category, and the player whose character scores the highest overall wins. Supposed to be a fun game encouraging debate and out-of-the-box thinking!</p>
+                            </div>
+                            <div class="project-tech">
+                                <img class="cogs-logo" src="./media/logos/cogs.png">
+                                <p class="project-para info">Code is available <a class='project-anchor' href="https://github.com/jakejones2/mates-rate">here</a> on GitHub. The app employs <b>websockets</b> for real-time interactivity; frontend using vanilla js/css, backend using python async/await, postgres, redis, Google Custom Search API, daphne/gunicorn servers. Unit testing with unittest, end-to-end testing with multiple instances of Selenium to simulate multiplayer gameplay. Type-checked with mypy, and deployed on <b>AWS</b> with Elastic Beanstalk, ElastiCache, RDS and Route 53. Logo and design the author's own.</p>
+                            </div>
+                        </div>
+                        <img class="project-img" src="./media/matesrate.png">
+                    </article>
+                    <div class="divider"></div>
+                    <article id="daily-express-proj" class="project">
+                        <img class="project-img" src="./media/daily-express.png">
+                        <div class="project-info" id="daily-express-proj-info">
+                            <h2 class="project-title"><i>Daily Express.js</i></h2>
+                            <h3 class="project-subtitle">Javascript <b>&nbsp;·&nbsp;</b> React &nbsp;&nbsp;|&nbsp;&nbsp; Sep 23 - Present</h3>
+                            <p class="project-para headline">This is the front-end website for my <a class="project-anchor" href="#articles-api-proj">Articles API</a> built with <b>React</b> and <b>Vite</b>.</a> Click <a class='project-anchor' href="https://nc-news-68e5d5.netlify.app/">here</a> to explore the site!</p>
+                            <div class="project-description">
+                                <img src="./media/logos/question.png" class="question-logo">
+                                <p class="project-para info">Browse the main feed without logging in. Filter and scroll through <b>article preview cards</b>, clicking on the title or image to access the full article and its <b>comments</b>. You can also click on users to view their <b>profile</b> and see what they have been up to! To vote, post comments, create articles and more, <b>log in</b> or <b>sign up</b>.</p>
+                            </div>
+                            <div class="project-tech">
+                                <img class="cogs-logo" src="./media/logos/cogs.png">
+                                <p class="project-para info">Code is available <a class='project-anchor' href="https://github.com/jakejones2/nc-news-app">here</a> on GitHub. The app is written using custom and composed <b>functional</b> components, <b>JSX templating</b> and <b>SASS</b> CSS following BEM standards. State, effect and context <b>hooks</b> achieve UI interactivity, modular loading, optimistic rendering, and a hybrid pagination/infinite scrolling system. Routing, navigation and URL search params are implemented with <b>React Router v6</b>, and responsive CSS via flex and media queries.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="divider"></div>
+                    <article id="articles-api-proj" class="project">
+                        <div class="project-info" id="articles-api-proj-info">
+                            <h2 class="project-title">Articles API</h2>
+                            <h3 class="project-subtitle">Javascript <b>&nbsp;·&nbsp;</b> Express.js <b>&nbsp;·&nbsp;</b> Postgres &nbsp;&nbsp;|&nbsp;&nbsp; Aug 23 </h3>
+                            <p class="project-para headline"><b>RESTful API</b> that lets you store and retrieve json data for a news/social media website. Visit the <a href="https://github.com/jakejones2/articles-api" class="project-anchor">GitHub readme</a>, and then have a go <a href="https://articles-api-zepx.onrender.com/api" class="project-anchor">here</a>!</p>
+                            <div class="project-description">
+                                <img src="./media/logos/question.png" class="question-logo">
+                                <p class="project-para info">Read through articles, categories and users, and then log in to create, delete or vote for content. Filter results with queries and sorting.</p>
+                            </div>
+                            <div class="project-tech">
+                                <img class="cogs-logo" src="./media/logos/cogs.png">
+                                <p class="project-para info">Uses Express.js and postgres, with pg-format + raw SQL for seeding and interacting with db. Implemented <b>authorisation middleware</b> with refresh/access JWTs and password hashing/salting. Built using <b>TDD</b> with <a href="https://jestjs.io/docs/" class="project-anchor">jest</a>. Deployed with Render and ElephantSQL, implemented <b>CI/CD</b> with GitHub Actions and pre-commit testing with Husky.</p>
+                            </div>
+                        </div>
+                        <img class="project-img" src="./media/articles-api.jpeg">
+                    </article>
+                    <div class="divider"></div>
+                    <article id='baby-names-proj' class="project">
+                        <img class="project-img" src="./media/name-generator.png">
+                        <div class="project-info" id="baby-names-proj-info">
+                            <h2 class="project-title"><i>Historical UK Baby Names</i></h2>
+                            <h3 class="project-subtitle">Javascript <b>&nbsp;·&nbsp;</b> React <b>&nbsp;·&nbsp;</b> CSS &nbsp;&nbsp;|&nbsp;&nbsp; Aug 23 </h3>
+                            <p class="project-para headline">My first react project! <a href="https://github.com/jakejones2/name-generator" class="project-anchor">Very simple code</a> but taught me a lot about components/state etc. Watch this space for bigger React builds!</p>
+                            <div class="project-description">
+                                <img src="./media/logos/question.png" class="question-logo">
+                                <p class="project-para info">View the <a class='project-anchor' href="https://name-generator-i5r3.onrender.com/">site</a>, and choose baby names from throughout the twentieth century. Even has <b>twins</b> mode and <b>sound effects</b>....</p>
+                            </div>
+                            <div class="project-tech">
+                                <img class="cogs-logo" src="./media/logos/cogs.png">
+                                <p class="project-para info">Built with JS, <b>React</b> and vanilla CSS. Deployed on the free tier of Render which spins sites down after periods of inactivity. Apologies if the initial load takes a minute!</p>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="divider"></div>
+                    <article id='animals-proj' class="project">
+                        <div class="project-info" id="animals-proj-info">
+                            <h2 class="project-title"><i>Do You Know Your Animals?</i></h2>
+                            <h3 class="project-subtitle">Javascript <b>&nbsp;·&nbsp;</b> Express.js &nbsp;&nbsp;|&nbsp;&nbsp; Aug 23 </h3>
+                            <p class="project-para headline">I was practicing DOM manipulation and using <b>audio</b> in js, and ended up with <a href="https://animal-game.onrender.com/" class="project-anchor">this game</a> which turned out to be surprisingly hard.</p>
+                            <div class="project-description">
+                                <img src="./media/logos/question.png" class="question-logo">
+                                <p class="project-para info">Listen to the sounds and then try to click the animals in the right order. Even the smallest thought causes you to fail. A challenge for those with an obtrusive inner monologue.</p>
+                            </div>
+                            <div class="project-tech">
+                                <img class="cogs-logo" src="./media/logos/cogs.png">
+                                <p class="project-para info">There's nothing unusual or impressive in the code, but feel free to <a href="https://github.com/jakejones2/animal-game" class="project-anchor">have a look</a> anyway. It's another free-tier Render deployment, so apologies if the initial load takes a while...</p>
+                            </div>
+                        </div>
+                        <img class="project-img" src="./media/animals.png">
+                    </article>
+                    <div class="divider"></div>
+                    <article id='problem-solving-proj' class="project">
+                        <img class="project-img" src="./media/problem-solving.png">
+                        <div class="project-info" id="problem-solving-proj-info">
+                            <h2 class="project-title">Misc Problem Solving</h2>
+                            <h3 class="project-subtitle">Javascript <b>&nbsp;·&nbsp;</b> Jest &nbsp;&nbsp;|&nbsp;&nbsp; Jul 23</h3>
+                            <p class="project-para headline">Just a collection of problems I've enjoyed solving over the last few months. Have a look at the <a href="https://github.com/jakejones2/problem-solving" class="project-anchor">repo</a>!</p>
+                            <div class="project-description">
+                                <img src="./media/logos/question.png" class="question-logo">
+                                <p class="project-para info">Personal highlight was the <b>Boggle</b> problem - write a function that evaluates whether a word is valid on a given boggle board.</p>
+                            </div>
+                            <div class="project-tech">
+                                <img class="cogs-logo" src="./media/logos/cogs.png">
+                                <p class="project-para info">Topics include recursion, closure, and working with primitives vs objects.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="divider"></div>
+                    <article id='sc-scraper-proj' class="project">
+                        <div class="project-info" id="sc-scraper-proj-info">
+                            <h2 class="project-title">SoundCloud Comment Scraper</h2>
+                            <h3 class="project-subtitle">Python <b>&nbsp;·&nbsp;</b> Tkinter <b>&nbsp;·&nbsp;</b> Selenium &nbsp;&nbsp;|&nbsp;&nbsp; Jan 23 - Mar 23 </h3>
+                            <p class="project-para headline">Scrape and download comments from SoundCloud.com - see what people are saying about the music you like!</p>
+                            <div class="project-description">
+                                <img src="./media/logos/question.png" class="question-logo">
+                                <p class="project-para info">This <b>python package</b> scrapes SoundCloud comments with a selection of built in and customisable filters. Data is exported to <b>CSV</b>, and can be scraped from individual track URLs, or parent URLs such as <b>playlists</b> or <b>artist pages</b>.</p>
+                            </div>
+                            <div class="project-tech">
+                                <img class="cogs-logo" src="./media/logos/cogs.png">
+                                <p class="project-para info">See the <a class='project-anchor' href="https://github.com/jakejones2/sc-comment-scraper">code</a>! This project was intended initially for use in music scholarship, so I designed a <b>Tkinter GUI</b> as the main interface. However, the modules could be imported and used independently as in the example at the bottom of <code>/src/app/backend/scraper.py</code>.<br><br>This was my first ever coding project - excuse some poor design choices here and there! I've made some notes in the GitHub readme about things that need improving. At some point I might revisit the code and refactor it for a simple web app. It might also be a good starting point to practice some data analysis or ML, e.g. finding themes in an artist's discourse, or filtering spam comments.</p>
+                            </div>
+                        </div>
+                        <img class="project-img" src="./media/sc_scraper.jpeg">
+                    </article>
                 </div>
-                <article id="swim-wild-proj" class="project">
-                    <img class="project-img" src="./media/swim-wild.png">
-                    <div class="project-info" id="swil-wild-proj-info">
-                        <h2 class="project-title"><i>Swim Wild</i></h2>
-                        <h3 class="project-subtitle">Javascript <b>&nbsp;·&nbsp;</b> React Native <b>&nbsp;·&nbsp;</b> Express.js <b>&nbsp;·&nbsp;</b> MongoDB &nbsp;&nbsp;|&nbsp;&nbsp; Sep 23</h3>
-                        <p class="project-para headline">Swim Wild is a social platform for the emerging trend of wild swimming. Planned and built in under two weeks as the culmination of the Northcoders Bootcamp, see a demo <a class='project-anchor' href="https://youtu.be/Ijmxn4ugKPQ">here!</a></p>
-                        <div class="project-description">
-                            <img src="./media/logos/question.png" class="question-logo">
-                            <p class="project-para info">Swim Wild provides a blend of user generated and <b>web-scraped</b> content to inform users about nearby swimmings spots, their features, and safety considerations. Users can create new locations, track and see data about their swim history, upload pictures and reviews, see nearby locations on a map, and receive realtime updates on hydrology and weather information from our network of APIs.</p>
-                        </div>
-                        <div class="project-tech">
-                            <img class="cogs-logo" src="./media/logos/cogs.png">
-                            <p class="project-para info">Backend uses node/express.js and <b>MongoDB/mongoose.</b> Authentication and image storage handled with Firebase. ML polynomial regression algorithms analyse timeseries data to predict water temperatures based on date and location. Front end uses <b>React Native</b> with Expo Go, using device location, gallery and camera.</p>
-                        </div>
-                    </div>
-                </article>
-                <div class="divider"></div>
-                <article id="mates-rate-proj" class="project">
-                    <div class="project-info" id="mates-rate-proj-info">
-                        <h2 class="project-title"><i>Mates Rate</i> Web Game</h2>
-                        <h3 class="project-subtitle">Python <b>&nbsp;·&nbsp;</b> Django Channels <b>&nbsp;·&nbsp;</b> AWS &nbsp;&nbsp;|&nbsp;&nbsp; Apr 23 - Present</h3>
-                        <p class="project-para headline">My most recent and developed Python project - an online multiplayer game built with <a class='project-anchor' href="https://channels.readthedocs.io/en/latest/">Django Channels</a>. Click <a class='project-anchor' href="https://matesrate.net">here</a> to play now!</p>
-                        <div class="project-description">
-                            <img src="./media/logos/question.png" class="question-logo">
-                            <p class="project-para info">Join or host a game with friends, and then take turns submitting <b>characters</b> or a <b>category</b>. Players vote on each character's performance in the chosen category, and the player whose character scores the highest overall wins. Supposed to be a fun game encouraging debate and out-of-the-box thinking!</p>
-                        </div>
-                        <div class="project-tech">
-                            <img class="cogs-logo" src="./media/logos/cogs.png">
-                            <p class="project-para info">Code is available <a class='project-anchor' href="https://github.com/jakejones2/mates-rate">here</a> on GitHub. The app employs <b>websockets</b> for real-time interactivity; frontend using vanilla js/css, backend using python async/await, postgres, redis, Google Custom Search API, daphne/gunicorn servers. Unit testing with unittest, end-to-end testing with multiple instances of Selenium to simulate multiplayer gameplay. Type-checked with mypy, and deployed on <b>AWS</b> with Elastic Beanstalk, ElastiCache, RDS and Route 53. Logo and design the author's own.</p>
-                        </div>
-                    </div>
-                    <img class="project-img" src="./media/matesrate.png">
-                </article>
-                <div class="divider"></div>
-                <article id="daily-express-proj" class="project">
-                    <img class="project-img" src="./media/daily-express.png">
-                    <div class="project-info" id="daily-express-proj-info">
-                        <h2 class="project-title"><i>Daily Express.js</i></h2>
-                        <h3 class="project-subtitle">Javascript <b>&nbsp;·&nbsp;</b> React &nbsp;&nbsp;|&nbsp;&nbsp; Sep 23 - Present</h3>
-                        <p class="project-para headline">This is the front-end website for my <a class="project-anchor" href="#articles-api-proj">Articles API</a> built with <b>React</b> and <b>Vite</b>.</a> Click <a class='project-anchor' href="https://nc-news-68e5d5.netlify.app/">here</a> to explore the site!</p>
-                        <div class="project-description">
-                            <img src="./media/logos/question.png" class="question-logo">
-                            <p class="project-para info">Browse the main feed without logging in. Filter and scroll through <b>article preview cards</b>, clicking on the title or image to access the full article and its <b>comments</b>. You can also click on users to view their <b>profile</b> and see what they have been up to! To vote, post comments, create articles and more, <b>log in</b> or <b>sign up</b>.</p>
-                        </div>
-                        <div class="project-tech">
-                            <img class="cogs-logo" src="./media/logos/cogs.png">
-                            <p class="project-para info">Code is available <a class='project-anchor' href="https://github.com/jakejones2/nc-news-app">here</a> on GitHub. The app is written using custom and composed <b>functional</b> components, <b>JSX templating</b> and <b>SASS</b> CSS following BEM standards. State, effect and context <b>hooks</b> achieve UI interactivity, modular loading, optimistic rendering, and a hybrid pagination/infinite scrolling system. Routing, navigation and URL search params are implemented with <b>React Router v6</b>, and responsive CSS via flex and media queries.</p>
-                        </div>
-                    </div>
-                </article>
-                <div class="divider"></div>
-                <article id="articles-api-proj" class="project">
-                    <div class="project-info" id="articles-api-proj-info">
-                        <h2 class="project-title">Articles API</h2>
-                        <h3 class="project-subtitle">Javascript <b>&nbsp;·&nbsp;</b> Express.js <b>&nbsp;·&nbsp;</b> Postgres &nbsp;&nbsp;|&nbsp;&nbsp; Aug 23 </h3>
-                        <p class="project-para headline"><b>RESTful API</b> that lets you store and retrieve json data for a news/social media website. Visit the <a href="https://github.com/jakejones2/articles-api" class="project-anchor">GitHub readme</a>, and then have a go <a href="https://articles-api-zepx.onrender.com/api" class="project-anchor">here</a>!</p>
-                        <div class="project-description">
-                            <img src="./media/logos/question.png" class="question-logo">
-                            <p class="project-para info">Read through articles, categories and users, and then log in to create, delete or vote for content. Filter results with queries and sorting.</p>
-                        </div>
-                        <div class="project-tech">
-                            <img class="cogs-logo" src="./media/logos/cogs.png">
-                            <p class="project-para info">Uses Express.js and postgres, with pg-format + raw SQL for seeding and interacting with db. Implemented <b>authorisation middleware</b> with refresh/access JWTs and password hashing/salting. Built using <b>TDD</b> with <a href="https://jestjs.io/docs/" class="project-anchor">jest</a>. Deployed with Render and ElephantSQL, implemented <b>CI/CD</b> with GitHub Actions and pre-commit testing with Husky.</p>
-                        </div>
-                    </div>
-                    <img class="project-img" src="./media/articles-api.jpeg">
-                </article>
-                <div class="divider"></div>
-                <article id='baby-names-proj' class="project">
-                    <img class="project-img" src="./media/name-generator.png">
-                    <div class="project-info" id="baby-names-proj-info">
-                        <h2 class="project-title"><i>Historical UK Baby Names</i></h2>
-                        <h3 class="project-subtitle">Javascript <b>&nbsp;·&nbsp;</b> React <b>&nbsp;·&nbsp;</b> CSS &nbsp;&nbsp;|&nbsp;&nbsp; Aug 23 </h3>
-                        <p class="project-para headline">My first react project! <a href="https://github.com/jakejones2/name-generator" class="project-anchor">Very simple code</a> but taught me a lot about components/state etc. Watch this space for bigger React builds!</p>
-                        <div class="project-description">
-                            <img src="./media/logos/question.png" class="question-logo">
-                            <p class="project-para info">View the <a class='project-anchor' href="https://name-generator-i5r3.onrender.com/">site</a>, and choose baby names from throughout the twentieth century. Even has <b>twins</b> mode and <b>sound effects</b>....</p>
-                        </div>
-                        <div class="project-tech">
-                            <img class="cogs-logo" src="./media/logos/cogs.png">
-                            <p class="project-para info">Built with JS, <b>React</b> and vanilla CSS. Deployed on the free tier of Render which spins sites down after periods of inactivity. Apologies if the initial load takes a minute!</p>
-                        </div>
-                    </div>
-                </article>
-                <div class="divider"></div>
-                <article id='animals-proj' class="project">
-                    <div class="project-info" id="animals-proj-info">
-                        <h2 class="project-title"><i>Do You Know Your Animals?</i></h2>
-                        <h3 class="project-subtitle">Javascript <b>&nbsp;·&nbsp;</b> Express.js &nbsp;&nbsp;|&nbsp;&nbsp; Aug 23 </h3>
-                        <p class="project-para headline">I was practicing DOM manipulation and using <b>audio</b> in js, and ended up with <a href="https://animal-game.onrender.com/" class="project-anchor">this game</a> which turned out to be surprisingly hard.</p>
-                        <div class="project-description">
-                            <img src="./media/logos/question.png" class="question-logo">
-                            <p class="project-para info">Listen to the sounds and then try to click the animals in the right order. Even the smallest thought causes you to fail. A challenge for those with an obtrusive inner monologue.</p>
-                        </div>
-                        <div class="project-tech">
-                            <img class="cogs-logo" src="./media/logos/cogs.png">
-                            <p class="project-para info">There's nothing unusual or impressive in the code, but feel free to <a href="https://github.com/jakejones2/animal-game" class="project-anchor">have a look</a> anyway. It's another free-tier Render deployment, so apologies if the initial load takes a while...</p>
-                        </div>
-                    </div>
-                    <img class="project-img" src="./media/animals.png">
-                </article>
-                <div class="divider"></div>
-                <article id='problem-solving-proj' class="project">
-                    <img class="project-img" src="./media/problem-solving.png">
-                    <div class="project-info" id="problem-solving-proj-info">
-                        <h2 class="project-title">Misc Problem Solving</h2>
-                        <h3 class="project-subtitle">Javascript <b>&nbsp;·&nbsp;</b> Jest &nbsp;&nbsp;|&nbsp;&nbsp; Jul 23</h3>
-                        <p class="project-para headline">Just a collection of problems I've enjoyed solving over the last few months. Have a look at the <a href="https://github.com/jakejones2/problem-solving" class="project-anchor">repo</a>!</p>
-                        <div class="project-description">
-                            <img src="./media/logos/question.png" class="question-logo">
-                            <p class="project-para info">Personal highlight was the <b>Boggle</b> problem - write a function that evaluates whether a word is valid on a given boggle board.</p>
-                        </div>
-                        <div class="project-tech">
-                            <img class="cogs-logo" src="./media/logos/cogs.png">
-                            <p class="project-para info">Topics include recursion, closure, and working with primitives vs objects.</p>
-                        </div>
-                    </div>
-                </article>
-                <div class="divider"></div>
-                <article id='sc-scraper-proj' class="project">
-                    <div class="project-info" id="sc-scraper-proj-info">
-                        <h2 class="project-title">SoundCloud Comment Scraper</h2>
-                        <h3 class="project-subtitle">Python <b>&nbsp;·&nbsp;</b> Tkinter <b>&nbsp;·&nbsp;</b> Selenium &nbsp;&nbsp;|&nbsp;&nbsp; Jan 23 - Mar 23 </h3>
-                        <p class="project-para headline">Scrape and download comments from SoundCloud.com - see what people are saying about the music you like!</p>
-                        <div class="project-description">
-                            <img src="./media/logos/question.png" class="question-logo">
-                            <p class="project-para info">This <b>python package</b> scrapes SoundCloud comments with a selection of built in and customisable filters. Data is exported to <b>CSV</b>, and can be scraped from individual track URLs, or parent URLs such as <b>playlists</b> or <b>artist pages</b>.</p>
-                        </div>
-                        <div class="project-tech">
-                            <img class="cogs-logo" src="./media/logos/cogs.png">
-                            <p class="project-para info">See the <a class='project-anchor' href="https://github.com/jakejones2/sc-comment-scraper">code</a>! This project was intended initially for use in music scholarship, so I designed a <b>Tkinter GUI</b> as the main interface. However, the modules could be imported and used independently as in the example at the bottom of <code>/src/app/backend/scraper.py</code>.<br><br>This was my first ever coding project - excuse some poor design choices here and there! I've made some notes in the GitHub readme about things that need improving. At some point I might revisit the code and refactor it for a simple web app. It might also be a good starting point to practice some data analysis or ML, e.g. finding themes in an artist's discourse, or filtering spam comments.</p>
-                        </div>
-                    </div>
-                    <img class="project-img" src="./media/sc_scraper.jpeg">
-                </article>
             </section>
             <section id="about-me">
                 <div id="blob1">
-                    <h2 class="section-title" id="about-me-title">About Me</h2>
+                    <h2 class="section-title projects-title" id="about-me-title">About Me</h2>
                     <article class="about-me-content">
-                        <p class="about-me-para">As a student of <b>musical analysis</b> I enjoyed learning syntax and working creatively and precisely in technical environments. Coding puts these skills to use in a new context, and aligns my interests in design, communication and problem-solving.</p>
+                        <p class="about-me-para">As a student of <b>musical analysis</b> I became confident learning syntax and working creatively in technical environments. Coding puts these skills to use in a new context, and aligns my interests in design, communication and problem-solving.</p>
                         <p class="about-me-para">Aside from programming, I’m a keen swimmer, sci-fi reader and Subbuteo enthusiast (1950s players only). I’m drawn towards hobbies that involve building or making things, and probably get too invested in logic puzzles and strategy games.</p>
                         <p class="about-me-para">Writing and listening to music remains a big part of my life, and my favourite pieces usually involve some sort of creative negotiation with a musical form. There’s a parallel with coding there somewhere!</p>
+                        <iframe id="sound-cloud-player" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1363004998&color=%233a4549&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
                     </article>
-                </div>
-                <div id="about-me-boxes">
-                    <img id="about-me-pic" src="./media/pp3.jpeg" class="about-me-box">
-                    <div class="about-me-divider"></div>
-                    <div class="about-me-box flex">
-                        <iframe id='sound-cloud-player' scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1363004998&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
-                        <a target="_blank" href="./Jake Jones CV.pdf"><img class="link-logo" id="cv-img" src="./media/logos/cv.png"></a>
-                    </div>
                 </div>
             </section>
             <section id="contact">
-                <div class="space"></div>
                 <div id="blob2">
-                    <h2 class="section-title">Contact</h2>
+                    <h2 class="section-title" id="contact-title">Contact</h2>
                     <ul id="contact-list">
                         <li ><img class="contact-img" id="phone-logo" src="./media/logos/phone.png"><span class="contact">07887396271</span></li>
                         <li ><img class="contact-img" src="./media/logos/email.png"><span class="contact">jakejones1998@hotmail.co.uk</span></li>
                         <li ><img class="contact-img" src="./media/logos/github-black.png"><span class="contact">https://github.com/jakejones2</span></li>
                         <li ><img class="contact-img" src="./media/logos/linkedin-black.png"><span class="contact">https://www.linkedin.com/in/jake-jones-318330102/</span></li>
+                        <a class="contact-anchor" target="_blank" href="./Jake Jones CV.pdf"><li ><img class="contact-img" src="./media/logos/cv.png"><span class="contact">Click to download CV</span></li></a>
                     </ul>       
                 </div>
             </section>
