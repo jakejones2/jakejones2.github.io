@@ -832,8 +832,9 @@ a:hover {
 
     #daily-express-proj,
     #swim-wild-proj,
-    #baby-names-proj,
-    #problem-solving-proj {
+    #coup-proj,
+    #animals-proj,
+    #sc-scraper-proj {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: flex-start;

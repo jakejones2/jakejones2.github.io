@@ -162,9 +162,24 @@
                         </div>
                         <img class="project-img" src="./media/articles-api.jpeg">
                     </article>
+                    <article id="coup-proj" class="project">
+                        <img class="project-img" src="./media/coup.png">
+                        <div class="project-info" id="coup-proj-info">
+                            <h2 class="project-title">In progress: Reinforcement Learning with <i>Coup</i></h2>
+                            <h3 class="project-subtitle">Python <b>&nbsp;·&nbsp;</b> PettingZoo <b>&nbsp;·&nbsp;</b> TensorFlow &nbsp;&nbsp;|&nbsp;&nbsp; Oct 23 </h3>
+                            <p class="project-para headline">First attempt at Machine Learning! Trying to train a Keras model to play the card game <a href="https://www.ultraboardgames.com/coup/game-rules.php" class="project-anchor">Coup</a>. See the work-in-progress repo <a href="https://github.com/jakejones2/coup-RL" class="project-anchor">here.</a></p>
+                            <div class="project-description">
+                                <img src="./media/logos/question.png" class="question-logo">
+                                <p class="project-para info">Watch the computer play the game with random actions by running the file <code>random_policy.py</code>.<br><br> The main challenge when building the environment was figuring out how to enable the correct turn-based play; the PettingZoo AEC api was unsuitable because players can 'interrupt' at any moment and block or counter certain actions. My solution utilises the Parallel API (where players make moves simultaneously) along with <b>action masking</b> to force players into a move order that can change depending on game events.</p>
+                            </div>
+                            <div class="project-tech">
+                                <img class="cogs-logo" src="./media/logos/cogs.png">
+                                <p class="project-para info">Check out <a href="https://pettingzoo.farama.org/" class="project-anchor">PettingZoo</a> for more information on multi-agent Gymnasium environments, and <a href="https://docs.ray.io/en/latest/rllib/index.html" class="project-anchor">RLlib</a> for training.</p>
+                            </div>
+                        </div>
+                    </article>
                     <div class="divider"></div>
                     <article id='baby-names-proj' class="project">
-                        <img class="project-img" src="./media/name-generator.png">
                         <div class="project-info" id="baby-names-proj-info">
                             <h2 class="project-title"><i>Historical UK Baby Names</i></h2>
                             <h3 class="project-subtitle">Javascript <b>&nbsp;·&nbsp;</b> React <b>&nbsp;·&nbsp;</b> CSS &nbsp;&nbsp;|&nbsp;&nbsp; Aug 23 </h3>
@@ -178,9 +193,11 @@
                                 <p class="project-para info">Built with JS, <b>React</b> and vanilla CSS. Deployed on the free tier of Render which spins sites down after periods of inactivity. Apologies if the initial load takes a minute!</p>
                             </div>
                         </div>
+                        <img class="project-img" src="./media/name-generator.png">
                     </article>
                     <div class="divider"></div>
                     <article id='animals-proj' class="project">
+                        <img class="project-img" src="./media/animals.png">
                         <div class="project-info" id="animals-proj-info">
                             <h2 class="project-title"><i>Do You Know Your Animals?</i></h2>
                             <h3 class="project-subtitle">Javascript <b>&nbsp;·&nbsp;</b> Express.js &nbsp;&nbsp;|&nbsp;&nbsp; Aug 23 </h3>
@@ -194,11 +211,9 @@
                                 <p class="project-para info">There's nothing unusual or impressive in the code, but feel free to <a href="https://github.com/jakejones2/animal-game" class="project-anchor">have a look</a> anyway. It's another free-tier Render deployment, so apologies if the initial load takes a while...</p>
                             </div>
                         </div>
-                        <img class="project-img" src="./media/animals.png">
                     </article>
                     <div class="divider"></div>
                     <article id='problem-solving-proj' class="project">
-                        <img class="project-img" src="./media/problem-solving.png">
                         <div class="project-info" id="problem-solving-proj-info">
                             <h2 class="project-title">Misc Problem Solving</h2>
                             <h3 class="project-subtitle">Javascript <b>&nbsp;·&nbsp;</b> Jest &nbsp;&nbsp;|&nbsp;&nbsp; Jul 23</h3>
@@ -212,9 +227,11 @@
                                 <p class="project-para info">Topics include recursion, closure, and working with primitives vs objects.</p>
                             </div>
                         </div>
+                        <img class="project-img" src="./media/problem-solving.png">
                     </article>
                     <div class="divider"></div>
                     <article id='sc-scraper-proj' class="project">
+                        <img class="project-img" src="./media/sc_scraper.jpeg">
                         <div class="project-info" id="sc-scraper-proj-info">
                             <h2 class="project-title">SoundCloud Comment Scraper</h2>
                             <h3 class="project-subtitle">Python <b>&nbsp;·&nbsp;</b> Tkinter <b>&nbsp;·&nbsp;</b> Selenium &nbsp;&nbsp;|&nbsp;&nbsp; Jan 23 - Mar 23 </h3>
@@ -228,7 +245,6 @@
                                 <p class="project-para info">See the <a class='project-anchor' href="https://github.com/jakejones2/sc-comment-scraper">code</a>! This project was intended initially for use in music scholarship, so I designed a <b>Tkinter GUI</b> as the main interface. However, the modules could be imported and used independently as in the example at the bottom of <code>/src/app/backend/scraper.py</code>.<br><br>This was my first ever coding project - excuse some poor design choices here and there! I've made some notes in the GitHub readme about things that need improving. At some point I might revisit the code and refactor it for a simple web app. It might also be a good starting point to practice some data analysis or ML, e.g. finding themes in an artist's discourse, or filtering spam comments.</p>
                             </div>
                         </div>
-                        <img class="project-img" src="./media/sc_scraper.jpeg">
                     </article>
                 </div>
             </section>
