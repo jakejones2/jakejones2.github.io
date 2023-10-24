@@ -167,14 +167,14 @@
                         <div class="project-info" id="coup-proj-info">
                             <h2 class="project-title">In progress: Reinforcement Learning with <i>Coup</i></h2>
                             <h3 class="project-subtitle">Python <b>&nbsp;·&nbsp;</b> PettingZoo <b>&nbsp;·&nbsp;</b> TensorFlow &nbsp;&nbsp;|&nbsp;&nbsp; Oct 23 </h3>
-                            <p class="project-para headline">First attempt at Machine Learning! Trying to train a Keras model to play the card game <a href="https://www.ultraboardgames.com/coup/game-rules.php" class="project-anchor">Coup</a>. See the work-in-progress repo <a href="https://github.com/jakejones2/coup-RL" class="project-anchor">here.</a></p>
+                            <p class="project-para headline">First attempt at Machine Learning! Training a Keras model to play the card game <a href="https://www.ultraboardgames.com/coup/game-rules.php" class="project-anchor">Coup</a>. See the work-in-progress repo <a href="https://github.com/jakejones2/coup-RL" class="project-anchor">here.</a></p>
                             <div class="project-description">
                                 <img src="./media/logos/question.png" class="question-logo">
                                 <p class="project-para info">Watch the computer play the game with random actions by running the file <code>random_policy.py</code>.<br><br> The main challenge when building the environment was figuring out how to enable the correct turn-based play; the PettingZoo AEC api was unsuitable because players can 'interrupt' at any moment and block or counter certain actions. My solution utilises the Parallel API (where players make moves simultaneously) along with <b>action masking</b> to force players into a move order that can change depending on game events.</p>
                             </div>
                             <div class="project-tech">
                                 <img class="cogs-logo" src="./media/logos/cogs.png">
-                                <p class="project-para info">Check out <a href="https://pettingzoo.farama.org/" class="project-anchor">PettingZoo</a> for more information on multi-agent Gymnasium environments, and <a href="https://docs.ray.io/en/latest/rllib/index.html" class="project-anchor">RLlib</a> for training.</p>
+                                <p class="project-para info">Check out <a href="https://pettingzoo.farama.org/" class="project-anchor">PettingZoo</a> for more information on multi-agent Gymnasium environments, and <a href="https://docs.ray.io/en/latest/rllib/index.html" class="project-anchor">RLlib</a> for training. Best policy so far performs about twice as well as a random agent, winning 55.1% of games (n = 4000) against 3 other players making random decisions (would normally expect 25% win rate).</p>
                             </div>
                         </div>
                     </article>
