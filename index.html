@@ -95,6 +95,23 @@
             <section id="projects">
                 <div class="section-container" id="projects-container">
                     <h2 class="section-title" id="projects-title">Projects</h2>
+                    <article id="art-shop-proj" class="project">
+                        <div class="project-info" id="art-shop-proj-info">
+                            <h2 class="project-title"><i>Art shop</i></h2>
+                            <h3 class="project-subtitle">Typescript <b>&nbsp;·&nbsp;</b> Next.js <b>&nbsp;·&nbsp;</b> Cypress &nbsp;&nbsp;|&nbsp;&nbsp; Oct 23 - Nov 23</h3>
+                            <p class="project-para headline">This is an example implementation of an <b>e-commerce website</b> that I'm currently building for an artist. The business is pending, so for now you'll have to make do with <a class="project-anchor" href="https://www.jude-connolly.co.uk/" target="_blank">this demo</a> with fake products (don't worry - the stripe checkout isn't accepting live payments!)</p>
+                            <div class="project-description">
+                                <img src="./media/logos/question.png" class="question-logo">
+                                <p class="project-para info">View products organised relationally as the intersection of formats (prints, postcards etc.) and art pieces. Visit <a class="project-anchor" href="https://www.jude-connolly.co.uk/admin">/admin</a> (and use the password 'admin') to see the <b>custom CMS.</b> Send messages and buy products, receiving automated receipts and acknowledgements via email.</p>
+                            </div>
+                            <div class="project-tech">
+                                <img class="cogs-logo" src="./media/logos/cogs.png">
+                                <p class="project-para info">Full-stack application built with Next.js and Typescript. <b>Prisma ORM</b> connects to a Planetscale database, although I found this set up a little restricting by the end! I couldn't work out how to join multiple tables and fetch all the data I needed in one api call - will probably look into GraphQL in future. Payments are handled by <b>Stripe</b>, emails with <b>Nodemailer</b> and react-email for templating. A massive step forward in this project was using <b>Tanstack Query</b> for fetching - this allowed me to cache data easily and mark it as stale when neccessary. <b>TailwindCSS</b> was also much appreciated on the front end, I never felt restricted and it was much neater than using SASS! Deployment was very easy with Vercel, although I'm currently working out how to optimise the images better. I'm using <b>imagekit.io</b> CDN at the moment but still not happy with load times!</p>
+                            </div>
+                        </div>
+                        <img class="project-img" src="./media/art-shop.png">
+                    </article>
+                    <div class="divider"></div>
                     <article id="swim-wild-proj" class="project">
                         <img class="project-img" src="./media/swim-wild.png">
                         <div class="project-info" id="swil-wild-proj-info">
@@ -162,6 +179,7 @@
                         </div>
                         <img class="project-img" src="./media/articles-api.jpeg">
                     </article>
+                    <div class="divider"></div>
                     <article id="coup-proj" class="project">
                         <img class="project-img" src="./media/coup.png">
                         <div class="project-info" id="coup-proj-info">
