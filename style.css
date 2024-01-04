@@ -167,12 +167,16 @@ header {
 
 .star {
   position: absolute;
+  z-index: 1;
+}
+
+.starInner {
   height: 2px;
   width: 2px;
+  margin: 4px;
   border-radius: 50%;
   box-shadow: 0px 0px 10px 3px rgb(10, 64, 227);
   animation: twinkle1 3s infinite;
-  z-index: 1;
 }
 
 #star1 {
