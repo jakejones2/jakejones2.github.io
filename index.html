@@ -96,6 +96,27 @@
                 <div class="section-container" id="projects-container">
                     <h2 class="section-title" id="projects-title">Projects</h2>
                     <article id="art-shop-proj" class="project">
+                        <img class="project-img" src="./media/wfms-site.png">
+                        <div class="project-info" id="art-shop-proj-info">
+                            <h2 class="project-title"><i>WFMS Website</i></h2>
+                            <h3 class="project-subtitle">Typescript <b>&nbsp;·&nbsp;</b> Next.js <b>&nbsp;·&nbsp;</b> Storyblok &nbsp;&nbsp;|&nbsp;&nbsp; Dec 23 - </h3>
+                            <p class="project-para headline">Currently working on a new website for Waltham Forest Music Service. Fully integrated with <b>Storyblok headless CMS</b>! Have a look at the demo <a class="project-anchor" href="https://wfmeh-website.vercel.app/" target="_blank">here...</a></p>
+                            <div class="project-description">
+                                <img src="./media/logos/question.png" class="question-logo">
+                                <p class="project-para info">Check out the animated nav bar and (mostly) smooth UI features. Trying to get everything to look as slick as possible with no visual bumps! Lots of freedom with the design on this project, starting point being only the branding colours from the logo.</p>
+                            </div>
+                            <div class="project-tech">
+                                <img class="cogs-logo" src="./media/logos/cogs.png">
+                                <div>
+
+                                    <p class="project-para info">First project using a third-party headless CMS! Storyblok has been easy to use - would certainly recommend for most use cases. It works well with Next.js as you can use server side API endpoints to process forms built on the CMS, and take advantage of <b>getStaticPaths</b> and Storyblok <b>webhooks</b> to continually build all the content statically for great performance. Only limiting factors at the moment are document storage (free tier doesn't include pdfs) and compatability with Next.js 13. After a few weak integrations with the app router I downgraded to v12 and haven't had any problems since.</p>
+                                    <p class="project-para info">I've taken a <b>modular approach</b> to the content - my Storyblok components are generally as small as possible to improve flexibility and reuseability. Cautious use of the <b>tailwind.config safelist</b> has allowed things like colours, margins and visual effects to be controlled from the CMS, with changes appearing in real time thanks to the magic of Storyblok's visual editor which hooks into the application directly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="divider"></div>
+                    <article id="art-shop-proj" class="project">
                         <div class="project-info" id="art-shop-proj-info">
                             <h2 class="project-title"><i>Art shop</i></h2>
                             <h3 class="project-subtitle">Typescript <b>&nbsp;·&nbsp;</b> Next.js <b>&nbsp;·&nbsp;</b> Cypress &nbsp;&nbsp;|&nbsp;&nbsp; Oct 23 - Nov 23</h3>
@@ -106,7 +127,10 @@
                             </div>
                             <div class="project-tech">
                                 <img class="cogs-logo" src="./media/logos/cogs.png">
-                                <p class="project-para info">Full-stack application built with Next.js and Typescript. <b>Prisma ORM</b> connects to a Planetscale database, although I found this set up a little restricting by the end! I couldn't work out how to join multiple tables and fetch all the data I needed in one api call - will probably look into GraphQL in future. Payments are handled by <b>Stripe</b>, emails with <b>Nodemailer</b> and react-email for templating. A massive step forward in this project was using <b>Tanstack Query</b> for fetching - this allowed me to cache data easily and mark it as stale when neccessary. <b>TailwindCSS</b> was also much appreciated on the front end, I never felt restricted and it was much neater than using SASS! Deployment was very easy with Vercel, although I'm currently working out how to optimise the images better. I'm using <b>imagekit.io</b> CDN at the moment but still not happy with load times!</p>
+                                <div>
+                                    <p class="project-para info">Full-stack application built with Next.js and Typescript. <b>Prisma ORM</b> connects to a Planetscale database, although I found this set up a little restricting by the end. I couldn't join multiple tables and fetch all the data I needed in one api call - will probably use GraphQL in future. Payments are handled by <b>Stripe</b>, emails with <b>Nodemailer</b> and react-email for templating.</p>
+                                    <p class="project-para info">A massive step forward in this project was using <b>Tanstack Query</b> for fetching - this allowed me to cache data easily and mark it as stale when neccessary. <b>TailwindCSS</b> was also much appreciated on the front end, I never felt restricted and it was much neater than using SASS! Deployment was very easy with Vercel, although I'm currently working out how to optimise the images better. I'm using <b>imagekit.io</b> CDN at the moment but still not happy with load times!</p>
+                                </div>
                             </div>
                         </div>
                         <img class="project-img" src="./media/art-shop.png">
